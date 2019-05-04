@@ -13,6 +13,9 @@ services:
     volumes:
       - ./configuration/lora-app-server:/etc/lora-app-server
 
+  loraserveradapter:
+    image: woosalk/loraserveradapter:v1.0.2
+
   gatewaybridge:
     image: loraserver/lora-gateway-bridge:2
     ports:
