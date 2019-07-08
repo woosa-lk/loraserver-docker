@@ -14,7 +14,7 @@ services:
       - ./configuration/lora-app-server:/etc/lora-app-server
 
   loraserveradapter:
-    image: woosalk/loraserveradapter:v2.1
+    image: woosalk/loraserveradapter:v2.2
 
   gatewaybridge:
     image: loraserver/lora-gateway-bridge:2
