@@ -14,7 +14,7 @@ services:
       - ./configuration/lora-app-server:/etc/lora-app-server
 
   loraserveradapter:
-    image: woosalk/loraserveradapter:1
+    image: woosalk/lora-server-adapter:1
     depends_on:
       - mosquitto
 
