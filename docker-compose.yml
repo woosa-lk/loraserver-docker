@@ -13,11 +13,6 @@ services:
     volumes:
       - ./configuration/lora-app-server:/etc/lora-app-server
 
-  loraserveradapter:
-    image: woosalk/lora-server-adapter:1
-    depends_on:
-      - mosquitto
-
   gatewaybridge:
     image: loraserver/lora-gateway-bridge:2
     ports:
